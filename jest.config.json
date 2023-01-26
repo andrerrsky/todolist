@@ -1,0 +1,31 @@
+{
+  "bail": true,
+  "maxConcurrency": 2,
+  "moduleNameMapper": {
+    "^@src(.*)$": "<rootDir>/src$1",
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  },
+  "testEnvironment": "jsdom",
+  "testTimeout": 10000,
+  "testPathIgnorePatterns": [
+    "<rootDir>/.next/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/cypress/"
+  ],
+  "setupFilesAfterEnv": ["<rootDir>/.jest/jestSetup.ts"],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/hooks/**/*.{js,jsx,ts,tsx}",
+    "./src/utils/**/*.{js,jsx,ts,tsx}"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "coverageReporters": ["text", "cobertura", "lcov"]
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo ""
+echo "Running Husky pre-commit 🐶 woof!"
+echo ""
+
+yarn lint && yarn test
+
+echo ""

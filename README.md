@@ -113,7 +113,7 @@ Common types according to [commitlint-config-conventional (based on the Angular 
 
 ## Access
 
-Comming soon.
+[Link](https://vercel.com/andrerrsky/todolist/BHwRwfBHUJJteVcMDuhevRXYUetS)
 
 ## Contributing
 
